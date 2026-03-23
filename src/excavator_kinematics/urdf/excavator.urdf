@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot name="excavator">
+  <material name="mars_sand">
+    <color rgba="0.95 0.85 0.80 1.0"/>
+  </material>
+  <material name="bucket_cream">
+    <color rgba="0.98 0.92 0.75 1.0"/>
+  </material>
+  <material name="warning_red">
+    <color rgba="0.90 0.10 0.10 1.0"/>
+  </material>
+  <material name="dark_link">
+    <color rgba="0.12 0.12 0.12 1.0"/>
+  </material>
+
+  <link name="world"/>
+
+  <link name="excavator_base">
+    <inertial>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <mass value="20.0"/>
+      <inertia ixx="0.2" ixy="0.0" ixz="0.0" iyy="0.2" iyz="0.0" izz="0.2"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.30 0.20 0.10"/>
+      </geometry>
+      <material name="dark_link"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.30 0.20 0.10"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="world_to_excavator_base" type="fixed">
+    <parent link="world"/>
+    <child link="excavator_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- MATLAB parameter c = 125 mm, represented as a fixed tower from J3 to J1. -->
+  <link name="excavator_tower">
+    <visual>
+      <origin xyz="0 0 0.0625" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="0.125"/>
+      </geometry>
+      <material name="warning_red"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0625" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="0.125"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tower_fixed_joint" type="fixed">
+    <parent link="excavator_base"/>
+    <child link="excavator_tower"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="excavator_arm_link">
+    <inertial>
+      <origin xyz="0.2525 0 0" rpy="0 0 0"/>
+      <mass value="8.0"/>
+      <inertia ixx="0.08" ixy="0.0" ixz="0.0" iyy="0.08" iyz="0.0" izz="0.08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.2525 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.505 0.06 0.06"/>
+      </geometry>
+      <material name="mars_sand"/>
+    </visual>
+    <collision>
+      <origin xyz="0.2525 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.505 0.06 0.06"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- MATLAB re range: -45 deg to +85 deg. -->
+  <joint name="excavator_arm_joint" type="revolute">
+    <parent link="excavator_base"/>
+    <child link="excavator_arm_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.785398" upper="1.483530" effort="300.0" velocity="2.0"/>
+  </joint>
+
+  <link name="excavator_bucket_link">
+    <inertial>
+      <origin xyz="0.0625 0 0" rpy="0 0 0"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0625 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.125 0.05 0.05"/>
+      </geometry>
+      <material name="bucket_cream"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0625 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.125 0.05 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- MATLAB rt range: -150 deg to +60 deg. -->
+  <joint name="excavator_bucket_joint" type="revolute">
+    <parent link="excavator_arm_link"/>
+    <child link="excavator_bucket_link"/>
+    <origin xyz="0.505 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.617994" upper="1.047198" effort="250.0" velocity="3.0"/>
+  </joint>
+
+  <link name="excavator_bucket_shell">
+    <visual>
+      <origin xyz="0.10 0 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.12 0.16 0.04"/>
+      </geometry>
+      <material name="bucket_cream"/>
+    </visual>
+    <collision>
+      <origin xyz="0.10 0 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.12 0.16 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="bucket_shell_fixed_joint" type="fixed">
+    <parent link="excavator_bucket_link"/>
+    <child link="excavator_bucket_shell"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

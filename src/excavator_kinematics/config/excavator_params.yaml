@@ -1,0 +1,33 @@
+excavator_state_node:
+  ros__parameters:
+    s1_mm: 505.0
+    c_mm: 125.0
+    b_mm: 125.0
+    actuator_min_mm: 380.0
+    actuator_max_mm: 630.0
+    warn_thresh_mm: 5.0
+    v_stroke_mmps: 5.0
+    gravity_mps2: 9.81
+
+    initial_re_deg: 30.0
+    initial_rt_deg: -90.0
+    initial_mass_kg: 10.0
+
+    publish_rate_hz: 20.0
+    command_topic: excavator/command
+    state_topic: excavator/state
+
+excavator_visualization_node:
+  ros__parameters:
+    frame_id: excavator_base
+    state_topic: excavator/state
+
+excavator_keyboard_node:
+  ros__parameters:
+    command_topic: excavator/command
+    step_re_deg: 2.0
+    step_rt_deg: 2.0
+    step_mass_kg: 1.0
+    initial_re_deg: 30.0
+    initial_rt_deg: -90.0
+    initial_mass_kg: 10.0
