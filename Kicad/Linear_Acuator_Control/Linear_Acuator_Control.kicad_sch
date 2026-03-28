@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "f7047aaa-ba32-49d1-99b3-f492bbec601f")
 	(paper "A4")
+	(title_block
+		(rev "2")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
@@ -750,12 +753,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Fujitsu_FTR-LYAA005x"
+		(symbol "Transistor_FET:IRLZ44N"
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "K"
-				(at 11.43 3.81 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -763,8 +769,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Fujitsu_FTR-LYAA005x"
-				(at 11.43 1.27 0)
+			(property "Value" "IRLZ44N"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -772,8 +778,19 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-				(at 11.43 -1.27 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -782,17 +799,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-				(at 17.78 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
+			(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
 				(at 0 0 0)
 				(effects
 					(font
@@ -801,7 +808,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "6A SPST-NO Relay"
+			(property "ki_keywords" "N-Channel HEXFET MOSFET Logic-Level"
 				(at 0 0 0)
 				(effects
 					(font
@@ -810,7 +817,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Relay*Fujitsu*FTR?LYA*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -819,10 +826,163 @@
 					(hide yes)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_0"
+			(symbol "IRLZ44N_0_1"
 				(polyline
 					(pts
-						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -833,162 +993,18 @@
 					)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_1"
-				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -8.255 1.905)
-					(end -1.905 -1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -1.905) (xy -2.54 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -5.08 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 3.175 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fujitsu_FTR-LYAA005x_1_1"
-				(pin passive line
-					(at -5.08 7.62 270)
+			(symbol "IRLZ44N_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "~"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A1"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -997,16 +1013,16 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "~"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A2"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1015,34 +1031,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -7.62 90)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "~"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1290,17 +1288,17 @@
 		)
 		(uuid "5b29ddbb-470a-4f5a-8e95-65f8b4d3de49")
 	)
-	(text "On/off control"
+	(text "Speed control"
 		(exclude_from_sim no)
-		(at 141.986 112.776 0)
+		(at 143.256 120.142 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "6b2ebad2-6dd1-4f83-a442-aa19e96893e6")
+		(uuid "a8aa23ad-5899-4cca-9b85-dde485e20996")
 	)
-	(text "Excavator Linear Actuator Driver Circuit"
+	(text "Excavator Linear Actuator Driver Circuit with MOSFET speed Control"
 		(exclude_from_sim no)
 		(at 140.716 54.102 0)
 		(effects
@@ -1317,28 +1315,16 @@
 		(uuid "08470d77-1663-44ca-a2f0-51e8ef3a2ce5")
 	)
 	(junction
-		(at 120.65 127)
+		(at 130.81 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "356bc710-8fb7-4dd5-8832-b2d2fb7cc675")
+		(uuid "2cb6ae64-d5cc-45c9-9650-75fdaf58d4f1")
 	)
 	(junction
 		(at 128.27 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7accc685-7ac3-446f-b233-ac85cc4e0c4b")
-	)
-	(junction
-		(at 110.49 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80cd92cc-b454-41a7-8e26-afcdc1e92f4c")
-	)
-	(junction
-		(at 160.02 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8a436cbe-8de5-4b02-a977-a7389f4c716e")
 	)
 	(junction
 		(at 177.8 72.39)
@@ -1354,13 +1340,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 90.17) (xy 120.65 93.98)
+			(xy 100.33 127) (xy 130.81 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01da4a95-355b-43b4-9eb7-0dccdc5c5f31")
+		(uuid "098bcace-1a66-4d92-9fc0-889b940c7f0e")
 	)
 	(wire
 		(pts
@@ -1374,13 +1360,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 93.98) (xy 120.65 93.98)
+			(xy 101.6 72.39) (xy 101.6 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15f7335e-97ba-450c-82db-9f38fc2ce1c2")
+		(uuid "0fb9efa4-cf45-4b82-b9c3-f96efe994add")
 	)
 	(wire
 		(pts
@@ -1404,56 +1390,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 109.22) (xy 172.72 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b253c61-d04f-4306-9543-fc535f6752db")
-	)
-	(wire
-		(pts
-			(xy 110.49 109.22) (xy 110.49 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b5310e7-bd88-4872-9587-835b19e06fcb")
-	)
-	(wire
-		(pts
-			(xy 104.14 106.68) (xy 160.02 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31f307ab-2b22-43fb-8616-ccc1f9e9ae36")
-	)
-	(wire
-		(pts
-			(xy 110.49 107.95) (xy 102.87 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32510ad8-f1dd-4eb8-9587-b8789c9eb13d")
-	)
-	(wire
-		(pts
-			(xy 170.18 124.46) (xy 170.18 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38ab2f1b-91eb-4fbf-8573-da1f146e219d")
-	)
-	(wire
-		(pts
 			(xy 123.19 72.39) (xy 128.27 72.39)
 		)
 		(stroke
@@ -1474,16 +1410,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 72.39) (xy 104.14 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4724a019-1c1f-4954-bf53-9ccbd3946a29")
-	)
-	(wire
-		(pts
 			(xy 100.33 69.85) (xy 110.49 69.85)
 		)
 		(stroke
@@ -1491,26 +1417,6 @@
 			(type default)
 		)
 		(uuid "483c1589-ff21-431e-b84b-bf033b603036")
-	)
-	(wire
-		(pts
-			(xy 104.14 72.39) (xy 104.14 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50ce0563-3c11-45b3-be25-74e75baa44b7")
-	)
-	(wire
-		(pts
-			(xy 170.18 127) (xy 120.65 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5389b965-acb3-4597-bd58-8fb067f066bb")
 	)
 	(wire
 		(pts
@@ -1524,17 +1430,17 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 107.95) (xy 102.87 74.93)
+			(xy 120.65 106.68) (xy 120.65 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6020356c-d6b0-471f-b3f0-8540cae4b40b")
+		(uuid "5f3cbb44-6eb4-45da-88fe-e5e144872b13")
 	)
 	(wire
 		(pts
-			(xy 110.49 93.98) (xy 110.49 97.79)
+			(xy 110.49 90.17) (xy 110.49 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1564,16 +1470,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 97.79) (xy 180.34 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e9daecc-5824-49ff-ad73-6741cbdefac9")
-	)
-	(wire
-		(pts
 			(xy 110.49 69.85) (xy 110.49 74.93)
 		)
 		(stroke
@@ -1594,23 +1490,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 93.98) (xy 160.02 97.79)
+			(xy 130.81 127) (xy 180.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84826f2b-1396-47bb-bebd-bbbcea1e47c3")
+	)
+	(wire
+		(pts
+			(xy 160.02 90.17) (xy 160.02 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "86fa3b1d-74c6-4f1f-b885-a3ddb100c4f3")
-	)
-	(wire
-		(pts
-			(xy 170.18 90.17) (xy 170.18 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88fb547e-4650-4a48-92e5-f80801e54bb8")
 	)
 	(wire
 		(pts
@@ -1624,16 +1520,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 124.46) (xy 120.65 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90597df2-383f-41ea-94e6-c296e386c702")
-	)
-	(wire
-		(pts
 			(xy 128.27 66.04) (xy 128.27 72.39)
 		)
 		(stroke
@@ -1641,16 +1527,6 @@
 			(type default)
 		)
 		(uuid "91267cd3-2497-4c9d-be5c-f679ccc68fbb")
-	)
-	(wire
-		(pts
-			(xy 130.81 99.06) (xy 123.19 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92adca61-b166-461a-b6ae-4e365a20d65f")
 	)
 	(wire
 		(pts
@@ -1684,7 +1560,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 90.17) (xy 130.81 99.06)
+			(xy 130.81 90.17) (xy 130.81 127)
 		)
 		(stroke
 			(width 0)
@@ -1694,13 +1570,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 90.17) (xy 160.02 93.98)
+			(xy 120.65 90.17) (xy 120.65 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9bdb4cb4-0736-40cf-938c-7558ce18760e")
+		(uuid "9a528e67-956e-43bc-a54a-1e7e3509ad90")
 	)
 	(wire
 		(pts
@@ -1714,23 +1590,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 127) (xy 120.65 127)
+			(xy 101.6 72.39) (xy 100.33 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6e1d45f-cafe-4d21-a2f7-4c870e0e213f")
-	)
-	(wire
-		(pts
-			(xy 172.72 97.79) (xy 180.34 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad69202a-3c52-49c0-9a32-dee91fa9bbf3")
+		(uuid "b490dd54-6387-41df-ad21-88b2aa2ff74d")
 	)
 	(wire
 		(pts
@@ -1754,13 +1620,23 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 74.93) (xy 100.33 74.93)
+			(xy 104.14 109.22) (xy 162.56 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c65ea257-2caf-4f86-845d-2942a6389e4d")
+		(uuid "c0c2cd70-6796-4891-b159-0a075ad9858d")
+	)
+	(wire
+		(pts
+			(xy 180.34 90.17) (xy 180.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb322363-81a1-46f0-9e05-f2e21fe88cca")
 	)
 	(wire
 		(pts
@@ -1784,6 +1660,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 90.17) (xy 170.18 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d869dfe4-4d71-49ff-905f-0bb0b22d4d29")
+	)
+	(wire
+		(pts
 			(xy 160.02 67.31) (xy 160.02 74.93)
 		)
 		(stroke
@@ -1794,23 +1680,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 123.19 109.22)
+			(xy 100.33 74.93) (xy 104.14 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dcd373d2-d1d1-432d-9b11-eb432b9a1adf")
-	)
-	(wire
-		(pts
-			(xy 160.02 124.46) (xy 160.02 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2043624-893d-40d2-af11-2c19e1356277")
+		(uuid "e19c41be-9514-477a-aad2-d5366520603e")
 	)
 	(wire
 		(pts
@@ -1834,43 +1710,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 106.68) (xy 160.02 109.22)
+			(xy 104.14 74.93) (xy 104.14 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2a61e8e-e44e-47fa-8a91-49fe1a0b9b0b")
+		(uuid "f6c8ff3a-86d9-46e2-b2e1-9f77424e26e9")
 	)
 	(wire
 		(pts
-			(xy 110.49 90.17) (xy 110.49 93.98)
+			(xy 101.6 101.6) (xy 113.03 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f667b8a5-662f-4c3d-863a-4fc75d150b27")
-	)
-	(wire
-		(pts
-			(xy 170.18 93.98) (xy 160.02 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8943130-f7df-4932-85b1-39d8c559c806")
-	)
-	(wire
-		(pts
-			(xy 110.49 124.46) (xy 110.49 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc620690-a9ea-4343-8b87-8bff39113fa7")
+		(uuid "f8e7f1fe-1d20-4f18-9c94-baaf6a30787d")
 	)
 	(global_label "Dir L2"
 		(shape input)
@@ -1894,7 +1750,7 @@
 			)
 		)
 	)
-	(global_label "CRL L2"
+	(global_label "Speed L1"
 		(shape input)
 		(at 100.33 72.39 180)
 		(fields_autoplaced yes)
@@ -1904,31 +1760,9 @@
 			)
 			(justify right)
 		)
-		(uuid "7144f13f-04e3-4754-b75a-894eb5bbc6d0")
+		(uuid "311ef2f8-8375-485e-bb42-d5b1bdc12e78")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.5715 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CRL L1"
-		(shape input)
-		(at 100.33 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9988a176-2150-429a-bd5b-e487d00e2cdd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.5715 74.93 0)
+			(at 88.4549 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1960,81 +1794,25 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Relay:Fujitsu_FTR-LYAA005x")
-		(at 115.57 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(global_label "Speed L2"
+		(shape input)
+		(at 100.33 74.93 180)
 		(fields_autoplaced yes)
-		(uuid "03895db1-678a-4a69-b812-1cad048ce17a")
-		(property "Reference" "K3"
-			(at 127 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "SPST Relay"
-			(at 127 118.1099 0)
+		(uuid "dec0c35f-7e1c-4045-8c33-b34923d3485f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.4549 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-			(at 127 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-			(at 133.35 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
-			(at 115.57 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "b41eff12-05e3-4157-87af-4352e901ddc6")
-		)
-		(pin "13"
-			(uuid "545a4d24-19f7-4dd2-9f3e-0ea92784aaf2")
-		)
-		(pin "A2"
-			(uuid "0550b5e0-e305-4105-ae6c-39766f9e0bb8")
-		)
-		(pin "14"
-			(uuid "25ed9c5f-68ee-4a35-a23c-24bfe8214496")
-		)
-		(instances
-			(project ""
-				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "K3")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -2188,84 +1966,6 @@
 			(project ""
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Fujitsu_FTR-LYAA005x")
-		(at 165.1 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "116b528c-670e-4a66-99ec-97d17d0bf8bc")
-		(property "Reference" "K4"
-			(at 176.53 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SPST Relay"
-			(at 176.53 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-			(at 176.53 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-			(at 182.88 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
-			(at 165.1 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "952f9c62-7bd8-4ca9-9ee0-1f6a940650b4")
-		)
-		(pin "13"
-			(uuid "41d8b0ba-90aa-45b9-907b-1832c798a117")
-		)
-		(pin "A2"
-			(uuid "b0e9bac5-c166-4f59-8881-650fb66bdb65")
-		)
-		(pin "14"
-			(uuid "4f40749a-08ac-4461-a8cd-b47c864af71d")
-		)
-		(instances
-			(project "Linear_Acuator_Control"
-				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "K4")
 					(unit 1)
 				)
 			)
@@ -2429,52 +2129,56 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 132.08 0)
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 118.11 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3c3b6c0d-1ef2-47f9-b15b-4be104ccff66")
-		(property "Reference" "#PWR05"
-			(at 160.02 138.43 0)
+		(uuid "29ae1f40-40c4-4192-a1d5-b5929dc98c7c")
+		(property "Reference" "Q1"
+			(at 124.46 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 124.46 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 123.19 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 160.02 137.16 0)
+		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+			(at 123.19 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 160.02 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 132.08 0)
+		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
+			(at 118.11 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2483,12 +2187,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "0a567ae2-2b85-4c4a-8fcc-6aff77004212")
+			(uuid "3ec8b60a-aa18-43ff-92d9-0a0527d38f50")
+		)
+		(pin "2"
+			(uuid "8433fba6-04a5-4597-8be8-3587ebb7a028")
+		)
+		(pin "3"
+			(uuid "607569ac-d583-4338-8556-7c843b281eca")
 		)
 		(instances
-			(project "Linear_Acuator_Control"
+			(project ""
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "#PWR05")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -2562,7 +2272,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 97.79 0)
+		(at 110.49 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2571,7 +2281,7 @@
 		(fields_autoplaced yes)
 		(uuid "68e8df50-fd8c-49ae-953a-41dd1256c7af")
 		(property "Reference" "#PWR01"
-			(at 110.49 104.14 0)
+			(at 110.49 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2580,7 +2290,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 102.87 0)
+			(at 110.49 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +2298,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 97.79 0)
+			(at 110.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 97.79 0)
+			(at 110.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2606,7 +2316,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 97.79 0)
+			(at 110.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2628,16 +2338,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 132.08 0)
+		(at 120.65 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c17109a1-efd4-42f7-9abc-75f3c694b71e")
-		(property "Reference" "#PWR03"
-			(at 110.49 138.43 0)
+		(uuid "6905589a-818d-4f96-8e5b-03525713dd74")
+		(property "Reference" "#PWR05"
+			(at 120.65 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,7 +2356,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 137.16 0)
+			(at 120.65 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2654,7 +2364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 132.08 0)
+			(at 120.65 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2663,7 +2373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 132.08 0)
+			(at 120.65 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,7 +2382,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 132.08 0)
+			(at 120.65 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2681,12 +2391,154 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd21a162-bf2a-4f1e-a8e1-2ba7b5e9228d")
+			(uuid "357d1daf-6d88-4388-be80-d8f4f90a9036")
 		)
 		(instances
-			(project "Linear_Acuator_Control"
+			(project ""
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abf61047-1536-48d0-828e-dd49163f0f23")
+		(property "Reference" "#PWR03"
+			(at 170.18 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcc97eba-cb11-4ccc-b76e-37d6a8a58c9b")
+		)
+		(instances
+			(project ""
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 167.64 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b852700c-3958-443f-836a-46b785532522")
+		(property "Reference" "Q2"
+			(at 173.99 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 173.99 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 172.72 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+			(at 172.72 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
+			(at 167.64 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f3b5e83d-4e84-4f7e-a980-2bfb02601a4c")
+		)
+		(pin "1"
+			(uuid "2dc8ba3d-3643-4db3-9985-7687b83f1e65")
+		)
+		(pin "2"
+			(uuid "1925384e-cd63-45af-a6e5-a3c763836474")
+		)
+		(instances
+			(project ""
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
