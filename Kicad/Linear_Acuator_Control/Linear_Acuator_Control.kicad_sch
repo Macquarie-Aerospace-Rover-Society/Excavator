@@ -198,6 +198,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:MBR745"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MBR745"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "45V 7.5A Schottky Barrier Rectifier Diode, TO-220"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?220*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MBR745_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MBR745_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Relay:EE2-12SNU"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1321,10 +1471,28 @@
 		(uuid "2cb6ae64-d5cc-45c9-9650-75fdaf58d4f1")
 	)
 	(junction
+		(at 170.18 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "309e6039-4ebb-467d-a275-ff6f73c05012")
+	)
+	(junction
+		(at 120.65 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73f94303-f932-45a2-a567-db0de9aabea1")
+	)
+	(junction
 		(at 128.27 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7accc685-7ac3-446f-b233-ac85cc4e0c4b")
+	)
+	(junction
+		(at 130.81 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a356db5-9118-40b4-9c0e-3a580d025a72")
 	)
 	(junction
 		(at 177.8 72.39)
@@ -1337,6 +1505,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d53abf07-7cee-48e4-92d9-2b00432c6fb6")
+	)
+	(junction
+		(at 180.34 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9dbaaa5-3616-4dda-a32f-84cfca7c2f5a")
 	)
 	(wire
 		(pts
@@ -1377,6 +1551,16 @@
 			(type default)
 		)
 		(uuid "1db2ac9d-154a-450c-a394-893527b1a0cc")
+	)
+	(wire
+		(pts
+			(xy 130.81 96.52) (xy 130.81 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f5f3614-b52e-4d8e-b423-7aa6e630558d")
 	)
 	(wire
 		(pts
@@ -1430,6 +1614,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 104.14) (xy 170.18 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "598c5821-9095-4a7f-ae78-62cd59cf57d6")
+	)
+	(wire
+		(pts
 			(xy 120.65 106.68) (xy 120.65 111.76)
 		)
 		(stroke
@@ -1457,6 +1651,16 @@
 			(type default)
 		)
 		(uuid "6687923e-15e1-4c0f-8eca-cebfc35f88f6")
+	)
+	(wire
+		(pts
+			(xy 128.27 96.52) (xy 130.81 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68dfbcfe-d116-4c27-b7ca-2a4831cd3709")
 	)
 	(wire
 		(pts
@@ -1560,7 +1764,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 90.17) (xy 130.81 127)
+			(xy 130.81 90.17) (xy 130.81 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1620,6 +1824,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 104.14) (xy 180.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9caecc-c87f-4f5e-aa81-ac389a693311")
+	)
+	(wire
+		(pts
 			(xy 104.14 109.22) (xy 162.56 109.22)
 		)
 		(stroke
@@ -1630,7 +1844,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 90.17) (xy 180.34 127)
+			(xy 180.34 90.17) (xy 180.34 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2271,6 +2485,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MBR745")
+		(at 176.53 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6865eeaf-10f1-4539-bca6-d8ef1032d826")
+		(property "Reference" "D2"
+			(at 176.8475 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MBR745"
+			(at 176.8475 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+			(at 176.53 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF"
+			(at 176.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "45V 7.5A Schottky Barrier Rectifier Diode, TO-220"
+			(at 176.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c03475de-3c68-4151-903b-8690eca045da")
+		)
+		(pin "2"
+			(uuid "759f22f0-019d-4c08-8a61-0db63932c7f7")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 110.49 93.98 0)
 		(unit 1)
@@ -2397,6 +2679,74 @@
 			(project ""
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR745")
+		(at 124.46 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2d32e9d-81af-4e74-9050-3c2e929db4ee")
+		(property "Reference" "D1"
+			(at 124.7775 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MBR745"
+			(at 124.7775 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+			(at 124.46 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "45V 7.5A Schottky Barrier Rectifier Diode, TO-220"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27dc4c91-7192-44a6-8c23-f58cdc6f21e2")
+		)
+		(pin "2"
+			(uuid "da6502a3-536c-4f80-80ad-be623828be6e")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D1")
 					(unit 1)
 				)
 			)
