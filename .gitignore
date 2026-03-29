@@ -4,3 +4,5 @@ log/
 **/__pycache__/
 *.pyc
 .vscode/
+Kicad/Linear_Acuator_Control/\#auto_saved_files\#
+Kicad/Linear_Acuator_Control/~Linear_Acuator_Control.kicad_sch.lck
