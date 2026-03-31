@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.7,
-          "height": 4.1,
-          "width": 4.1
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|104050000|70412500|4c70f2a1-9283-4b59-a367-0ef0d95f6401|bdd0b7dc-c0ce-45cc-899b-b7ea91e6a4c1",
+          "Unavoidable - Manufacturer Pin Spacing"
+        ],
+        [
+          "clearance|92250000|94080000|0ebdbbac-9671-4aec-a3aa-aba6ec3a2469|2c454c26-0fb5-4977-a2d4-3cac1d77ebe3",
+          "Not true Voltage Differential"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -489,7 +498,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.1778,
+        "clearance": 0.5,
         "name": "24v",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
