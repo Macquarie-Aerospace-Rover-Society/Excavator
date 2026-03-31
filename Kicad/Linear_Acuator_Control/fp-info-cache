@@ -1,4 +1,4 @@
-28307837222185650
+28311387014658566
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70573,6 +70573,13 @@ Yellow 5381 Series LED
 0
 2
 2
+MARS_Footprints
+Untitled
+
+
+0
+0
+0
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -75011,6 +75018,13 @@ esp32-s3
 0
 51
 41
+PCM_Espressif
+ESP32-S3-WROOM-Cam
+
+
+0
+40
+40
 PCM_Espressif
 ESP32-WROOM-32E
 ESP32-WROOM-32E and ESP32-WROOM-32UE: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf

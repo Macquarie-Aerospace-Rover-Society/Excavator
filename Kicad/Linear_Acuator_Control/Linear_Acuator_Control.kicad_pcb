@@ -3067,6 +3067,17 @@
 			(uuid "9d7fa1d8-c85b-4156-bb06-6ee9eeffcaf0")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/Uni/Downloads/ESP32-S3-PCB-master/ESP32-S3-PCB-master/ESP32-S3_Custom.step"
+			(offset
+				(xyz -143.5 66 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
 		(layer "F.Cu")
