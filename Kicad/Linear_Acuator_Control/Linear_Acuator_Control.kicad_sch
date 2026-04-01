@@ -3416,7 +3416,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ44N"
+		(property "Value" "IRLB3813"
 			(at 191.77 91.4399 0)
 			(effects
 				(font
@@ -4390,7 +4390,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ44N"
+		(property "Value" "IRLB3813"
 			(at 241.3 99.0599 0)
 			(effects
 				(font

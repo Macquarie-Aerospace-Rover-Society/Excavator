@@ -62,10 +62,6 @@
         [
           "clearance|104050000|70412500|4c70f2a1-9283-4b59-a367-0ef0d95f6401|bdd0b7dc-c0ce-45cc-899b-b7ea91e6a4c1",
           "Unavoidable - Manufacturer Pin Spacing"
-        ],
-        [
-          "clearance|92250000|94080000|0ebdbbac-9671-4aec-a3aa-aba6ec3a2469|2c454c26-0fb5-4977-a2d4-3cac1d77ebe3",
-          "Not true Voltage Differential"
         ]
       ],
       "meta": {
