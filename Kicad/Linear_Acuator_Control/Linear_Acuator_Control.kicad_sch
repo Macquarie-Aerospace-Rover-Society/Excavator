@@ -391,7 +391,147 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148WT"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:CD4148W"
 			(pin_numbers
 				(hide yes)
 			)
@@ -413,7 +553,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148WT"
+			(property "Value" "CD4148W"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -423,8 +563,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-523"
-				(at 0 -4.445 0)
+			(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -434,7 +574,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(property "Datasheet" "https://www.dccomponents.com/upload/product/original/623524775088.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -445,7 +585,7 @@
 					)
 				)
 			)
-			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+			(property "Description" "75V 0.15A Switching Diode, 0805"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -489,7 +629,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?523*"
+			(property "ki_fp_filters" "D*0805*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -500,7 +640,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WT_0_1"
+			(symbol "CD4148W_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -538,7 +678,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WT_1_1"
+			(symbol "CD4148W_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -727,6 +867,243 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "JLCPCB_Circuit_Protection:P6KE30CA_C696659"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "P6KE30CA_C696659"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCPCB_Circuit_Protection:DO-15_BD3.1-L6.7-P10.70-D0.9-BI"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/TVS_SEMIWARE-P6KE30CA_C696659.html"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "14.7A@10/1000us 1uA 25.6V 31.5V 41.4V 600W@10/1000us Bidirectional   ESD and Surge Protection (/ESD)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "SEMIWARE(赛米微尔)"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "P6KE30CA"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C696659"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Breakdown Voltage" "28.5V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Maximum Clamping Voltage" "41.4V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Stand-Off Voltage (Vrwm)" "25.6V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Leakage Current (Ir)" "1uA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Peak Pulse Current (Ipp)@10/1000us" "14.7A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TVS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "P6KE30CA_C696659_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.78) (xy 0 0) (xy -2.54 1.78) (xy -2.54 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.51 2.29) (xy -0.51 2.29) (xy 0 1.78) (xy 0 -1.78) (xy 0.51 -2.29) (xy 0.51 -2.29)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.78) (xy 0 0) (xy 2.54 -1.78) (xy 2.54 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3310,6 +3687,18 @@
 		(uuid "04424902-1c93-436b-bd3f-4741a708b14d")
 	)
 	(junction
+		(at 226.06 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "092e2174-331e-416a-923c-c7b5a99304df")
+	)
+	(junction
+		(at 185.42 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bacb1b8-b8cc-44e8-99e8-0d236e025ecb")
+	)
+	(junction
 		(at 193.04 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3340,16 +3729,52 @@
 		(uuid "309e6039-4ebb-467d-a275-ff6f73c05012")
 	)
 	(junction
+		(at 234.95 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37d37253-554e-41e2-bfc1-bd58c2ba7c70")
+	)
+	(junction
+		(at 245.11 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38dacfd0-6091-4514-b4f8-aaba74386924")
+	)
+	(junction
+		(at 187.96 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a6b37e0-94a1-405e-aea5-9e56194ed381")
+	)
+	(junction
 		(at 151.13 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a9a2b95-e98c-4648-b628-cb88c3fbc170")
 	)
 	(junction
+		(at 237.49 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ba18cb7-0f35-4207-a29d-dc79da220971")
+	)
+	(junction
+		(at 176.53 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4dc6e079-644c-437f-8d65-219bea1e1773")
+	)
+	(junction
 		(at 143.51 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5cf7448e-798b-4ec2-8a25-818d3341c685")
+	)
+	(junction
+		(at 195.58 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69918dde-591d-4156-816e-df1a539ede8a")
 	)
 	(junction
 		(at 177.8 63.5)
@@ -3382,16 +3807,16 @@
 		(uuid "acef9fde-5ab1-4690-8623-245213701b89")
 	)
 	(junction
-		(at 218.44 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b785fe3a-455b-44eb-8835-ed749899c455")
-	)
-	(junction
 		(at 227.33 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c03aada1-c6b2-46c5-a2fc-c805632f9e69")
+	)
+	(junction
+		(at 217.17 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2ca5fab-9dfa-47c2-a297-c4a5dc188cfb")
 	)
 	(junction
 		(at 167.64 78.74)
@@ -3451,7 +3876,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 53.34) (xy 195.58 58.42)
+			(xy 195.58 50.8) (xy 195.58 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3468,16 +3893,6 @@
 			(type default)
 		)
 		(uuid "031bcca8-bb69-4d0e-9d2c-50502a469637")
-	)
-	(wire
-		(pts
-			(xy 218.44 81.28) (xy 227.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05ec0006-b93e-47ef-be98-b9de54882f4e")
 	)
 	(wire
 		(pts
@@ -3511,7 +3926,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 81.28) (xy 218.44 81.28)
+			(xy 214.63 81.28) (xy 217.17 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3528,6 +3943,16 @@
 			(type default)
 		)
 		(uuid "0ef5be4e-de87-45eb-9552-da6c4b98a63a")
+	)
+	(wire
+		(pts
+			(xy 187.96 95.25) (xy 187.96 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0efc2e89-ca8e-477b-82e1-5c111fb96a11")
 	)
 	(wire
 		(pts
@@ -3551,6 +3976,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 97.79) (xy 229.87 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1450c859-4a08-4257-82a2-f4154d3b2154")
+	)
+	(wire
+		(pts
 			(xy 143.51 52.07) (xy 143.51 57.15)
 		)
 		(stroke
@@ -3571,6 +4006,26 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 105.41) (xy 237.49 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a1c0994-af71-4e8a-adc2-03681a79a44a")
+	)
+	(wire
+		(pts
+			(xy 226.06 97.79) (xy 226.06 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a333361-6a31-4a1a-847d-d9f9e4c4cee0")
+	)
+	(wire
+		(pts
 			(xy 250.19 58.42) (xy 245.11 58.42)
 		)
 		(stroke
@@ -3578,6 +4033,16 @@
 			(type default)
 		)
 		(uuid "1db2ac9d-154a-450c-a394-893527b1a0cc")
+	)
+	(wire
+		(pts
+			(xy 184.15 95.25) (xy 187.96 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e533535-9d02-4524-b6f1-0df8d0620faf")
 	)
 	(wire
 		(pts
@@ -3591,13 +4056,23 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 54.61) (xy 245.11 58.42)
+			(xy 233.68 102.87) (xy 237.49 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "288f2c4b-bd51-4902-bebf-38d206ad3bd7")
+		(uuid "2d79ae8b-61b0-481f-9415-c1abdc0d65b1")
+	)
+	(wire
+		(pts
+			(xy 176.53 90.17) (xy 176.53 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b1e812-4c95-4d27-9b89-99a0c0102a3f")
 	)
 	(wire
 		(pts
@@ -3618,6 +4093,16 @@
 			(type default)
 		)
 		(uuid "3a34b29e-ec47-4fbb-9345-7cf1e2ce446a")
+	)
+	(wire
+		(pts
+			(xy 176.53 90.17) (xy 180.34 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4451558f-c4f4-46a7-ac75-0843c9baa532")
 	)
 	(wire
 		(pts
@@ -3661,16 +4146,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 95.25) (xy 187.96 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f3cbb44-6eb4-45da-88fe-e5e144872b13")
-	)
-	(wire
-		(pts
 			(xy 148.59 64.77) (xy 171.45 64.77)
 		)
 		(stroke
@@ -3678,6 +4153,16 @@
 			(type default)
 		)
 		(uuid "648682a6-e256-4c25-9527-e16a5ac8adab")
+	)
+	(wire
+		(pts
+			(xy 195.58 52.07) (xy 195.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "656bf727-e7ce-4fe3-a6e3-b19fa6cf233c")
 	)
 	(wire
 		(pts
@@ -3701,7 +4186,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 53.34) (xy 195.58 53.34)
+			(xy 187.96 50.8) (xy 195.58 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3751,7 +4236,17 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 73.66) (xy 218.44 81.28)
+			(xy 185.42 50.8) (xy 185.42 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75d12b24-ae84-4425-b0f5-f24c52c81789")
+	)
+	(wire
+		(pts
+			(xy 217.17 73.66) (xy 217.17 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3781,6 +4276,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 53.34) (xy 234.95 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f318794-ad48-42e0-bc51-59c41b62ce67")
+	)
+	(wire
+		(pts
 			(xy 198.12 115.57) (xy 247.65 115.57)
 		)
 		(stroke
@@ -3798,16 +4303,6 @@
 			(type default)
 		)
 		(uuid "86fa3b1d-74c6-4f1f-b885-a3ddb100c4f3")
-	)
-	(wire
-		(pts
-			(xy 234.95 53.34) (xy 234.95 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "877dcdb8-e24c-484d-8200-71e4b4fb7eb0")
 	)
 	(wire
 		(pts
@@ -3848,6 +4343,16 @@
 			(type default)
 		)
 		(uuid "96679a6a-1f4f-4ab6-98ff-f3dad551e046")
+	)
+	(wire
+		(pts
+			(xy 185.42 52.07) (xy 185.42 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "974436cd-171e-4707-b059-bcf479a10a4e")
 	)
 	(wire
 		(pts
@@ -3971,7 +4476,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 63.5) (xy 227.33 63.5)
+			(xy 217.17 63.5) (xy 227.33 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4001,13 +4506,33 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 97.79) (xy 229.87 97.79)
+			(xy 171.45 97.79) (xy 226.06 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c0c2cd70-6796-4891-b159-0a075ad9858d")
+	)
+	(wire
+		(pts
+			(xy 245.11 54.61) (xy 245.11 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e4269e-c077-4e87-9baf-315cf5d0d121")
+	)
+	(wire
+		(pts
+			(xy 234.95 55.88) (xy 234.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f22dd3-7771-4796-9955-2594439408cb")
 	)
 	(wire
 		(pts
@@ -4031,7 +4556,17 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 63.5) (xy 218.44 66.04)
+			(xy 245.11 55.88) (xy 245.11 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1aa7613-7627-4f16-b15e-28df99598e29")
+	)
+	(wire
+		(pts
+			(xy 217.17 63.5) (xy 217.17 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4081,16 +4616,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 53.34) (xy 185.42 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df942214-5ebb-4e7b-8376-fb5c00ea336b")
-	)
-	(wire
-		(pts
 			(xy 138.43 64.77) (xy 140.97 64.77)
 		)
 		(stroke
@@ -4118,6 +4643,16 @@
 			(type default)
 		)
 		(uuid "e7b9bfd5-c46c-45a7-824c-34abc37d9caf")
+	)
+	(wire
+		(pts
+			(xy 217.17 81.28) (xy 227.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4d3483-a226-4a9e-ad50-89faea7d3b7f")
 	)
 	(wire
 		(pts
@@ -4151,7 +4686,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 90.17) (xy 180.34 90.17)
+			(xy 162.56 90.17) (xy 176.53 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4389,7 +4924,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 185.42 54.61 90)
+		(at 185.42 52.07 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4399,7 +4934,7 @@
 		)
 		(uuid "284c9aff-26fd-49b4-bb07-80a24421715f")
 		(property "Net Class" "24v"
-			(at 182.88 53.9115 90)
+			(at 182.88 51.3715 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4410,7 +4945,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -64.77 -3.81 0)
+			(at -64.77 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4424,7 +4959,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 193.04 53.34 0)
+		(at 193.04 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4434,7 +4969,7 @@
 		)
 		(uuid "377c6bc6-d6a0-448e-824e-edb9bb00c1a5")
 		(property "Net Class" "24v"
-			(at 193.7385 50.8 0)
+			(at 193.7385 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4445,7 +4980,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -57.15 -5.08 0)
+			(at -57.15 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4635,7 +5170,6 @@
 		(length 2.54)
 		(shape round)
 		(at 187.96 99.06 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4644,7 +5178,7 @@
 		)
 		(uuid "bbf407c5-4936-40ea-b82c-872998cf670e")
 		(property "Net Class" "24v"
-			(at 185.42 98.3615 90)
+			(at 183.896 102.108 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4667,8 +5201,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SL_Resistors:1k")
-		(at 156.21 60.96 0)
+		(lib_id "Device:R")
+		(at 144.78 64.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4676,9 +5210,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "049459a4-d7b3-46a0-ab14-474020b70583")
+		(uuid "063d157e-9f88-41ea-a3df-0d8aebfe9169")
 		(property "Reference" "R6"
-			(at 155.956 60.96 0)
+			(at 144.78 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4688,7 +5222,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 156.21 58.674 0)
+			(at 144.78 62.738 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4698,7 +5232,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 157.099 65.278 0)
+			(at 144.78 66.548 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4709,7 +5243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.718 60.96 0)
+			(at 144.78 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,8 +5253,8 @@
 				)
 			)
 		)
-		(property "Description" "1kΩ, 1/4W Resistor"
-			(at 156.21 60.96 0)
+		(property "Description" "Resistor"
+			(at 144.78 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4731,10 +5265,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "05f2b59c-5058-4602-81fa-01e5bb90aa03")
+			(uuid "fae8a7c3-7b0f-4513-83e7-1dcc55598db9")
 		)
 		(pin "2"
-			(uuid "a58c171a-2292-4d29-bf18-49ced63e887b")
+			(uuid "d1a75a61-f7c5-4786-94bf-246da658dc5e")
 		)
 		(instances
 			(project "Linear_Acuator_Control"
@@ -4904,111 +5438,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WT")
-		(at 167.64 71.12 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1e4b8eb7-3eb8-48ee-9c4e-b79a0eb7f99d")
-		(property "Reference" "D3"
-			(at 163.576 70.104 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CD4148WSP"
-			(at 156.464 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 163.195 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
-			(at 167.64 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
-			(at 167.64 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 167.64 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 167.64 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cd27ce2b-4dd5-4862-b4ad-a8a861c2db9d")
-		)
-		(pin "2"
-			(uuid "8b840cce-0bfa-4e50-adfd-7628320aa2c1")
-		)
-		(instances
-			(project "Linear_Acuator_Control"
-				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 185.42 48.26 90)
+		(at 185.42 45.72 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5018,7 +5449,7 @@
 		(dnp no)
 		(uuid "211a1e1c-b37d-4f4b-9fdf-794420238f17")
 		(property "Reference" "L1"
-			(at 190.5 46.9899 90)
+			(at 190.5 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5029,7 +5460,7 @@
 			)
 		)
 		(property "Value" "Linear_actuator"
-			(at 190.5 49.5299 90)
+			(at 190.5 45.974 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5040,7 +5471,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
-			(at 185.42 48.26 0)
+			(at 185.42 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5051,7 +5482,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 48.26 0)
+			(at 185.42 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5062,7 +5493,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 185.42 48.26 0)
+			(at 185.42 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5189,7 +5620,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLB3813"
+		(property "Value" "IRLZ44NPBF"
 			(at 191.77 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5333,6 +5764,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 156.21 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "37afea29-a943-4943-b93a-6b6fb83c3f62")
+		(property "Reference" "R5"
+			(at 156.21 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 156.464 58.928 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 156.21 62.738 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25d3ab6d-5408-4475-b425-5bd65c4c04f6")
+		)
+		(pin "2"
+			(uuid "283cecde-6fe5-4df2-ac60-b21f94862a3f")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 130.81 132.08 0)
 		(unit 1)
@@ -5408,6 +5918,173 @@
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB_Circuit_Protection:P6KE30CA_C696659")
+		(at 240.03 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43919eda-97b3-4ba0-a521-60d90780bd6b")
+		(property "Reference" "D6"
+			(at 229.616 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "P6KE30CA_C696659"
+			(at 256.286 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCPCB_Circuit_Protection:DO-15_BD3.1-L6.7-P10.70-D0.9-BI"
+			(at 240.03 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/TVS_SEMIWARE-P6KE30CA_C696659.html"
+			(at 240.03 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "14.7A@10/1000us 1uA 25.6V 31.5V 41.4V 600W@10/1000us Bidirectional   ESD and Surge Protection (/ESD)"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SEMIWARE(赛米微尔)"
+			(at 240.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "P6KE30CA"
+			(at 240.03 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C696659"
+			(at 240.03 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Breakdown Voltage" "28.5V"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Maximum Clamping Voltage" "41.4V"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Stand-Off Voltage (Vrwm)" "25.6V"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current (Ir)" "1uA"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Peak Pulse Current (Ipp)@10/1000us" "14.7A"
+			(at 240.03 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2085f9df-0a1a-4573-8a0a-1d8e471d41cf")
+		)
+		(pin "2"
+			(uuid "aba8ff40-f97e-492b-86cc-04ac0bd7cf71")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5502,6 +6179,85 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_SL_Resistors:10k")
+		(at 180.34 95.25 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b94209f-fe42-4161-9781-8ad62c54b379")
+		(property "Reference" "R7"
+			(at 180.34 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 180.34 93.218 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 179.451 90.932 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.832 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kΩ, 1/4W Resistor"
+			(at 180.34 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1664759f-7562-43bd-9893-274fc8ae674c")
+		)
+		(pin "1"
+			(uuid "691050cf-c2fe-43a3-8170-e8f1c2dbcf29")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Relay:RT42xAxx")
 		(at 187.96 71.12 0)
 		(unit 1)
@@ -5513,7 +6269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cf9d649-1902-4da9-a7fa-bb18da33d1ef")
-		(property "Reference" "K3"
+		(property "Reference" "K1"
 			(at 204.47 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5524,7 +6280,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RT42xAxx"
+		(property "Value" "RT424024"
 			(at 204.47 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5595,7 +6351,7 @@
 		(instances
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "K3")
+					(reference "K1")
 					(unit 1)
 				)
 			)
@@ -5754,6 +6510,276 @@
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB_Circuit_Protection:P6KE30CA_C696659")
+		(at 190.5 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b48cde5-478a-4309-94f0-1beb48fda9bd")
+		(property "Reference" "D5"
+			(at 182.88 53.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "P6KE30CA_C696659"
+			(at 205.994 51.562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCPCB_Circuit_Protection:DO-15_BD3.1-L6.7-P10.70-D0.9-BI"
+			(at 190.5 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/TVS_SEMIWARE-P6KE30CA_C696659.html"
+			(at 190.5 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "14.7A@10/1000us 1uA 25.6V 31.5V 41.4V 600W@10/1000us Bidirectional   ESD and Surge Protection (/ESD)"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SEMIWARE(赛米微尔)"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "P6KE30CA"
+			(at 190.5 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C696659"
+			(at 190.5 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Breakdown Voltage" "28.5V"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Maximum Clamping Voltage" "41.4V"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Stand-Off Voltage (Vrwm)" "25.6V"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current (Ir)" "1uA"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Peak Pulse Current (Ipp)@10/1000us" "14.7A"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "175ec6f2-05b5-4df7-9aba-84747fb4115c")
+		)
+		(pin "2"
+			(uuid "fe59c802-c46a-4e2a-bd68-e5171fc844bd")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:CD4148W")
+		(at 167.64 71.12 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75715ff4-3a77-439b-9bd2-ef884462b5e7")
+		(property "Reference" "D3"
+			(at 163.322 69.596 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CD4148WSP"
+			(at 154.178 72.136 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 162.56 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.dccomponents.com/upload/product/original/623524775088.pdf"
+			(at 167.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Switching Diode, 0805"
+			(at 167.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c1521ba-61b0-40f6-984a-557c490886b1")
+		)
+		(pin "2"
+			(uuid "8f4f790a-88c7-4755-9cbe-62f35709d622")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6117,6 +7143,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:CD4148W")
+		(at 217.17 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "839809da-0b38-447a-adfd-5344291282f9")
+		(property "Reference" "D4"
+			(at 211.328 64.008 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CD4148WSP"
+			(at 204.978 66.294 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 212.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.dccomponents.com/upload/product/original/623524775088.pdf"
+			(at 217.17 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Switching Diode, 0805"
+			(at 217.17 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 217.17 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 217.17 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45a5407f-58cc-4119-a7e5-6130499c8073")
+		)
+		(pin "2"
+			(uuid "490ad453-3168-4ff6-bc9f-e0d933dea3ca")
+		)
+		(instances
+			(project "Linear_Acuator_Control"
+				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Relay:RT42xAxx")
 		(at 237.49 71.12 0)
 		(unit 1)
@@ -6128,7 +7257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89ff3ee2-2cba-4b32-9e82-4f4979b58af0")
-		(property "Reference" "K1"
+		(property "Reference" "K2"
 			(at 254 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6139,7 +7268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RT42xAxx"
+		(property "Value" "RT424024"
 			(at 254 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6210,7 +7339,7 @@
 		(instances
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "K1")
+					(reference "K2")
 					(unit 1)
 				)
 			)
@@ -6296,8 +7425,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WT")
-		(at 218.44 69.85 270)
+		(lib_id "PCM_SL_Resistors:10k")
+		(at 229.87 102.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6305,31 +7434,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "91c01ea9-9849-414b-a597-678fac6f5512")
-		(property "Reference" "D4"
-			(at 215.138 72.644 90)
+		(uuid "9b1497d1-a408-43b9-8aeb-3b5a6ce9da1f")
+		(property "Reference" "R8"
+			(at 229.87 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "CD4148WSP"
-			(at 208.026 75.184 90)
+		(property "Value" "10k"
+			(at 229.87 100.838 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 213.995 69.85 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 228.981 98.552 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6339,8 +7466,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
-			(at 218.44 69.85 0)
+		(property "Datasheet" ""
+			(at 229.362 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6350,8 +7477,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
-			(at 218.44 69.85 0)
+		(property "Description" "10kΩ, 1/4W Resistor"
+			(at 229.87 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6360,39 +7487,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 218.44 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 218.44 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4ceef355-4be6-499b-8f3d-939087d7c845")
 		)
 		(pin "2"
-			(uuid "0261466e-1305-4d4d-9846-641778c2e6e7")
+			(uuid "22048a8d-b714-4f51-9694-9d1636967618")
+		)
+		(pin "1"
+			(uuid "fef0d392-9a00-441d-a401-58a92f6d2a8e")
 		)
 		(instances
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "D4")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6566,7 +7671,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "aa931461-17c3-4c8f-96da-6448af716f46")
 		(property "Reference" "#PWR07"
 			(at 151.13 63.5 0)
@@ -6580,7 +7684,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 62.23 0)
+			(at 154.178 56.896 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6636,7 +7740,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 102.87 0)
+		(at 237.49 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6647,7 +7751,7 @@
 		(fields_autoplaced yes)
 		(uuid "abf61047-1536-48d0-828e-dd49163f0f23")
 		(property "Reference" "#PWR03"
-			(at 237.49 109.22 0)
+			(at 237.49 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6658,7 +7762,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 107.95 0)
+			(at 237.49 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6668,7 +7772,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 102.87 0)
+			(at 237.49 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6679,7 +7783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 102.87 0)
+			(at 237.49 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6690,7 +7794,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 102.87 0)
+			(at 237.49 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6707,85 +7811,6 @@
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_SL_Resistors:1k")
-		(at 144.78 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b35adc28-3845-4578-834a-f6def77a0fa1")
-		(property "Reference" "R5"
-			(at 144.78 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 144.78 62.738 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 145.669 69.088 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 145.288 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1kΩ, 1/4W Resistor"
-			(at 144.78 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aed8570d-a873-41d7-8a90-ea722d032548")
-		)
-		(pin "2"
-			(uuid "0adede68-4241-4017-8dbf-136b8a08677e")
-		)
-		(instances
-			(project "Linear_Acuator_Control"
-				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6814,7 +7839,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLB3813"
+		(property "Value" "IRLZ44NPBF"
 			(at 241.3 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7132,7 +8157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "daac7247-a4d2-4fad-aaa0-652e3da7037e")
-		(property "Reference" "Q5"
+		(property "Reference" "Q4"
 			(at 154.94 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7202,7 +8227,7 @@
 		(instances
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "Q5")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -7376,7 +8401,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5346cec-495a-4626-8a1e-22ffb84b9946")
-		(property "Reference" "L3"
+		(property "Reference" "PWD1"
 			(at 121.9199 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7440,7 +8465,7 @@
 		(instances
 			(project "Linear_Acuator_Control"
 				(path "/f7047aaa-ba32-49d1-99b3-f492bbec601f"
-					(reference "L3")
+					(reference "PWD1")
 					(unit 1)
 				)
 			)
