@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.6"
+      "Version": "10.0.1"
     },
-    "CreationDate": "2026-04-08T16:38:53+10:00"
+    "CreationDate": "2026-05-15T14:17:26+10:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,7 +14,7 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 93.55,
+      "X": 108.05,
       "Y": 68.05
     },
     "LayerNumber": 2,
@@ -24,12 +24,12 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.2,
-      "PadToTrack": 0.2,
+      "PadToPad": 0.127,
+      "PadToTrack": 0.127,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
@@ -77,6 +77,16 @@
       "Path": "Linear_Acuator_Control-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Linear_Acuator_Control-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Linear_Acuator_Control-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
+      "FilePolarity": "Positive"
     }
   ],
   "MaterialStackup": [
@@ -90,6 +100,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "Red",
       "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
@@ -112,6 +123,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "Red",
       "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
